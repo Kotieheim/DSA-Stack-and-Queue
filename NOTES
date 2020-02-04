@@ -1,1 +1,45 @@
 Stack-and-Queue Notes
+
+            Stack
+
+ - A stack is a data structure similiar to a list with access restricted to only 1 end. Elements are stored in a Last In First Out (LIFO) order.
+
+ - typically thought of as verticle data structures, unlike lists and arrays which are horizontal. Hence the 1st and the only directly accessible item on the stack is referred to as "top" of the stack.
+
+Stack Implementation
+
+ - standard way is to implement a stack using a singly linked list with constraints on its operations, where items can be inserted and deleted at only 1 place, the end of the list.
+
+ -  A stack has 2 primary functions
+    - push(): places data onto top of a stack
+    - pop(): removes data from top of stack
+
+Stack Insertion
+ - Limited to only inserting onto the top of the stack, the operation is called "push"(see above)
+
+Stack Removal
+ - Also limited to the top of the stack and is called "pop"(see above) 
+
+
+            Queue
+
+ - A queue is a data structure that models a First In First Out(FIFO) operation, for example a McDonalds line when ordering food. It is a type of list where data is inserted at the end and removed from the front. They are used to store data in the order in which they occur.
+
+Queue Implementation
+
+ - Just like stacks, queues can be implemented using singly linked list or a doubly linked list, where an item can be inserted only at the end of the list and items can be deleted only at the beginning of the list.
+
+  - Queue main functions include:
+    - enqueue(data): adds data to a queue (insertion)
+    - dequeue(): removes the oldest data added to a queue (deletion)
+
+Queue insertion 
+ - The insertion operation in a queue is limited to only 1 spot, the end of the queue. This is called enqueue.
+
+Queue Removal
+ - Removal in a queue is limited to only 1 place as well, at the beginning of the queue. This is called dequeue.
+
+
+            Stack and Queue in JavaScript
+
+ - It is useful to know you can use a JavaScript array to implement a stack and/or a queue. In JavaScript, the array push() and pop() methods more or less resemble operations in a stack. JavaScript arrays also provide the shift() method that can be used to implenet the dequeue operation in a queue.
